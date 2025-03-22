@@ -5,7 +5,7 @@ interface State {
 }
 
 class App extends Component<{}, State> {
-  state: State = { pressedKey: null }; // Инициализация state вне конструктора
+  state: State = { pressedKey: null };
 
   handleKeyUp = (event: KeyboardEvent) => {
     this.setState({ pressedKey: event.key });
